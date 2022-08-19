@@ -27,7 +27,7 @@ const chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
 chatServer.listen(5000);
 console.log('chat server is listening on port 5000');
 const path = require('path');
-console.log(env);
+
 if (env.name == 'development'){
     app.use(sassMiddleware({
         src: path.join(__dirname, env.asset_path, 'scss'),
